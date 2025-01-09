@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Soil.Site" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soil Enthusiast</title>
+    <link href="App_Themes/NavBarStyleSheet.css" rel="stylesheet" />
+    <link href="App_Themes/FooterStyleSheet1.css" rel="stylesheet" />
+    <!--<link href="App_Themes/StyleSheet1.css" rel="stylesheet" />-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <style>
+       .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Allow items to wrap onto new lines if necessary */
+}
+
+.features div {
+    text-align: center;
+    max-width: 300px;
+    flex: 1 1 200px; /* Ensures items are responsive and take equal space */
+    margin-bottom: 20px; /* Add margin to create space between items */
+}
+
+.features img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.features h3 {
+    color: #f0a500;
+    margin-bottom: 10px;
+}
+
+.features p {
+    color: #333;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .features div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navigation Menu -->
+        <div class="navMenu">
+            <ul>
+                <li><a href="index.aspx">Home</a></li>
+                <li><a href="Services.aspx">Services</a></li>
+                <li><a href="UserDashboard.aspx">Shop</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>          
+                             
+            </ul>
+        </div>
+
+        <!-- Main Content Area -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+       <!-- Feature Section -->
+<div class="features">
+    <!-- Mood Detection Feature -->
+    <div>
+        <a href="MoodDetection.aspx" style="text-decoration: none; color: inherit;">
+            <img src="images/mood-detection.jpg" alt="Mood Detection from Text Input" />
+            <h3>Mood Detection from Text Input</h3>
+        </a>
+        <p>Our intelligent system understands your mood by analyzing your responses, helping you recognize patterns in stress or anxiety for better self-awareness.</p>
+    </div>
+
+    <!-- Personalized Wellness Recommendations -->
+    <div>
+        <a href="WellnessRecommendations.aspx" style="text-decoration: none; color: inherit;">
+            <img src="images/wellness-recommendations.jpg" alt="Personalized Wellness Recommendations" />
+            <h3>Personalized Wellness Recommendations</h3>
+        </a>
+        <p>Based on your mood, we offer customized wellness activities such as relaxation techniques and self-care suggestions to help improve your emotional well-being.</p>
+    </div>
+
+    <!-- Emergency Alert System -->
+    <div>
+        <a href="EmergencyAlert.aspx" style="text-decoration: none; color: inherit;">
+            <img src="images/emergency-alert.jpg" alt="Emergency Alert System" />
+            <h3>Emergency Alert System</h3>
+        </a>
+        <p>In case of severe distress, our system ensures you are immediately connected to emergency support, providing peace of mind when it's most needed.</p>
+    </div>
+</div>
+
+
+        <!-- Footer -->
+        <div class="footer-info">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Address: AI-Powered Mental Health Companion, <br />Mumbai, Maharashtra 400031, India</p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>Phone: +91 90293 60971</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>Email: contact@mentalhealthcompanion.com</p>
+            </div>
+            <div>
+                <i class="fas fa-globe"></i>
+                <p>Website: www.mentalhealthcompanion.com</p>
+            </div>
+        </div>
+
+
+        <!-- Back to Top -->
+        <div class="back-to-top">
+            <a href="#top">Back to top</a>
+        </div>
+
+        <!-- Extended Footer Section -->
+        <div class="extended-footer">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="About.aspx">About</a></li>
+                    <li><a href="PrivacyPolicy.aspx">Privacy Policy</a></li>
+                    <li><a href="CancellationPolicy.aspx">Cancellation Policy</a></li>
+                    <li><a href="ReturnRefundPolicy.aspx">Return & Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Services</h4>
+                <ul>
+                    <li><a href="Contact.aspx">Contact Us</a></li>
+                    <li><a href="Services.aspx">Our Services</a></li>
+                    <li><a href="Checkout.aspx">Checkout</a></li>
+                    <li><a href="OrderHistory.aspx">Order History</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>                    
+                    <li><a href="LoginForm.aspx">Login</a></li>
+                    <li><a href="LoginForm.aspx">Logout</a></li>
+                    <li><a href="RegisterForm.aspx">Register</a></li>
+                    <li><a href="AdminLogin.aspx">Admin Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </form>
+</body>
+</html>
