@@ -1,0 +1,107 @@
+﻿.footer-info {
+    display: flex;
+    justify-content: center; /* Center align items */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines if necessary */
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 2px solid #ccc;
+    font-family: "Times New Roman", Times, serif; /* Use Times New Roman font */
+}
+
+.footer-info div {
+    text-align: center;
+    margin-bottom: 15px; /* Ensure items are evenly spaced */
+    flex: 1 1 200px; /* Ensures items are responsive and take equal space */
+    color: #333;
+}
+
+.footer-info i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+@media (max-width: 768px) {
+    .footer-info {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: left;
+    }
+
+    .footer-info div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.extended-footer {
+    display: flex;
+    justify-content: center; /* Center align items */
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Center-align content */
+    flex-wrap: wrap;
+    font-family: "Times New Roman", Times, serif; /* Use Times New Roman font */
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Ensures items are responsive and take equal space */
+    margin-bottom: 15px; /* Ensure items are evenly spaced */
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+*/
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.back-to-top {
+    text-align: center;
+    background-color: #151C25;
+    color: #fff;
+    padding: 10px;
+}
+
+.back-to-top a {
+    color: #EFA615;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-top a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .extended-footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: left;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
