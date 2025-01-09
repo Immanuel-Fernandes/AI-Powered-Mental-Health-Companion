@@ -1,0 +1,8 @@
+requests
+streamlit
+google-generativeai
+Pillow
+streamlit
+cohere
+langchain
+langchain-community
