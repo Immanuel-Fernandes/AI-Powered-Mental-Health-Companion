@@ -1,0 +1,112 @@
+﻿/* StylePage.css */
+
+.black-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.blacky-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.black-card h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.black-card p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Light pastel blue for calmness */
+    color: #333; /* Neutral text color for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Card Layout */
+.card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+
+
+/* Blue Card Styling */
+.blue-card {
+    background-color: #66CCFF; /* Deep blue */
+    color: #333;
+}
+
+/* Green Card Styling */
+.green-card {
+    background-color: #86EE78; /* Green */
+    color: #333;
+}
+
+/* Purple Card Styling */
+.purple-card {
+    background-color: #6a5acd; /* Purple */
+}
+
+/* Pastel Card Styling */
+.pastel-card {
+    background-color: #f8b3d0; /* Soft pastel pink */
+    color: #333; /* Text color changed to neutral for pastel cards */
+}
+
+/* Neutral Card Styling */
+.neutral-card {
+    background-color: #d3d3d3; /* Neutral gray */
+    color: #333; /* Text color changed to neutral for pastel cards */
+}
+
+/* Card Header and Paragraph Styling */
+.card h1, .card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Additional Card Styling */
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
